@@ -39,8 +39,6 @@ const CustomMultiSelect: React.FC = () => {
   }, [searchText]);
 
   const fetchData = () => {
-    // setLoading(true);
-    // const apiUrl = `https://rickandmortyapi.com/api/character/?name=${searchText}`;
     const apiUrl = `${BASE_URL}/?name=${searchText}`;
 
     console.log(BASE_URL === undefined);
