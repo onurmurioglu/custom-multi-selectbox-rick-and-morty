@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import React from 'react';
+import CustomMultiSelect from './src/components/CustomMultiSelect';
 
 const App = () => {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  )
-}
+  const options = [];
 
-export default App
+  return (
+    <SafeAreaView style={styles.container}>
+      <CustomMultiSelect options={options} />
+    </SafeAreaView>
+  );
+};
+
+export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#FFFFFF',
+    flex: 1,
+  },
+});
